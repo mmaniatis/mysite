@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 214, 219, 220;
+  /* background: linear-gradient(to right, hsl(62, 100%, 68%), #474747); */
+  font:mono;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,9 +18,6 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-}
 
 @layer utilities {
   .text-balance {
