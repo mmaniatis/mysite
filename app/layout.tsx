@@ -6,8 +6,7 @@ import NavBar from "./ui/nav-bar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Michael Maniatis",
-  description: "Create bugs fix bugs",
+  title: "mike maniatis"
 };
 
 export default function RootLayout({
