@@ -10,7 +10,7 @@ const links = [
 
 export default function NavBar() {
     return(
-        <div className="flex flex-col h-full bg-blue-50">
+        <div className="flex flex-col h-full md:bg-blue-50">
             {links.map((link, key) => {
                 return <Link key={key}
                     className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3" 
