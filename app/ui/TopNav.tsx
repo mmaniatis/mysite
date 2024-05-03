@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { XIcon, MenuIcon } from '@heroicons/react/solid';
 
 const Navbar: React.FC = () => {
@@ -13,7 +14,10 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between">
             <div>
                 <Link href="/" onClick={() => setIsOpen(false)}>
-                    <span className="hover:text-blue-500 cursor-pointer text-3xl">mikemaniatis.com</span>
+                    <div className="flex flex-row block">
+                        <Image className="" alt="" src="/cog.png"  width={52} height={52}/>
+                        <span className="text-blue-600 hover:text-blue-800 cursor-pointer text-3xl">mikemaniatis.com</span>
+                    </div>
                 </Link>
             </div>
           <div className="gap-5 hidden md:flex space-x-4 items-center">
