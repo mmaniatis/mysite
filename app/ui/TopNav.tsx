@@ -11,12 +11,14 @@ const Navbar: React.FC = () => {
     <nav className="bg-white py-7 rounded-3xl mx-auto mt-4 max-w-6xl z-10 shadow-2xl relative">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between">
-           <div>
+            <div>
                 <Link href="/" onClick={() => setIsOpen(false)}>
-                    <span className="hover:text-blue-500 cursor-pointer">mikemaniatis.com</span>
+                    <span className="hover:text-blue-500 cursor-pointer text-3xl">mikemaniatis.com</span>
                 </Link>
-          </div>
-          <div className="hidden md:flex space-x-4">
+            </div>
+          <div className="gap-5 hidden md:flex space-x-4 items-center">
+
+
             <Link href="/">
               <span className="hover:text-blue-500 cursor-pointer">Home</span>
             </Link>
@@ -28,8 +30,9 @@ const Navbar: React.FC = () => {
             <Link href="/contact">
               <span className="hover:text-blue-500 cursor-pointer">Contact</span>
             </Link>
-
           </div>
+          <div></div>
+          <div></div>
           <div className="flex md:hidden">
             <button
               className="focus:outline-none"

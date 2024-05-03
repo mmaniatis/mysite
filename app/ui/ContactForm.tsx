@@ -31,7 +31,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 font-mono">
+    <div className="max-w-md mx-auto p-6">
       <h2 className="text-2xl font-semibold mb-4">Contact Me</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">

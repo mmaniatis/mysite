@@ -10,14 +10,14 @@ export default function Home() {
 
 
       <div className="h-1/3 flex items-center justify-center">
-          <p className="font-mono italic max-w-lg mx-auto text-center">
+          <p className="italic max-w-lg mx-auto text-center">
             I have a passion for problem solving, leadership, and delivering quality results 
             in the shortest time possible.
           </p>
       </div>
 
       <div className="h-screen flex flex-col items-center justify-center">
-          <div><h1 className="font-mono text-4xl">Expertise</h1></div>
+          <div><h1 className="text-4xl">Expertise</h1></div>
 
           <div className="flex flex-wrap justify-center items-end">
 

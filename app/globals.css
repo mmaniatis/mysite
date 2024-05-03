@@ -6,8 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 214, 219, 220;
-  background: #ededed;
-  font:mono;
+  background: #d1d6dc;
 }
 
 @media (prefers-color-scheme: dark) {
