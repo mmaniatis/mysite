@@ -7,9 +7,7 @@ const proficiencyIcons = [
 export default function Home() {
   return (
     <main className="flex flex-col h-screen">
-      <div className="top-0 mt-4 mr-4">
-        <h1 className="font-mono text-2xl">mikemaniatis.com</h1>
-      </div>
+
 
       <div className="h-1/3 flex items-center justify-center">
           <p className="font-mono italic max-w-lg mx-auto text-center">
