@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
                 <Link href="/" onClick={() => setIsOpen(false)}>
                     <div className="flex flex-row block">
                         <Image className="" alt="" src="/cog.png"  width={52} height={52}/>
-                        <span className="text-blue-600 hover:text-blue-800 cursor-pointer text-3xl">mikemaniatis.com</span>
+                        <span className="hover:text-blue-800 cursor-pointer text-3xl">mikemaniatis.com</span>
                     </div>
                 </Link>
             </div>
