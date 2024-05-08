@@ -15,7 +15,7 @@ const PageRow: React.FC<Props> = ({ paragraphText, imageSrc, primaryImageLocatio
     return (
         <div className={`flex flex-col md:flex-${horizontalOrientation ? 'row' : 'col'}  bg-${offColored ? 'white' : ''} items-center`}>
 
-            <div className={` md:${primaryImageLocation ? '' : 'hidden'} p-4`}>
+            <div className={`hidden md:block md:${primaryImageLocation ? '' : 'hidden'} p-4`}>
                 <Image className="rounded-3xl" src={imageSrc} width={440} height={100} alt="" />
             </div>
 
@@ -26,7 +26,12 @@ const PageRow: React.FC<Props> = ({ paragraphText, imageSrc, primaryImageLocatio
                     {paragraphText}
                 </p>
             </div>
-            <div className={`${primaryImageLocation ? 'hidden' : ''} p-4`}>
+
+            <div className='md:hidden p-4'>
+                <Image className="rounded-3xl" src={imageSrc} width={440} height={100} alt="" />
+            </div>
+
+            <div className={`hidden md:block md:${primaryImageLocation ? 'hidden' : ''} p-4`}>
                 <Image className="rounded-3xl" src={imageSrc} width={440} height={100} alt="" />
             </div>
 
