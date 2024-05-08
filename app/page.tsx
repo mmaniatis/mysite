@@ -39,7 +39,7 @@ export default function Home() {
 
 
         <div className="flex flex-col items-center ">
-          <div><h1 className="text-4xl">Specialties</h1></div>
+          <div><h1 className="text-2xl md:text-3xl">Specialties</h1></div>
 
           <div className="flex flex-wrap justify-center items-end">
 
