@@ -6,7 +6,7 @@ import TopNav from "./ui/TopNav";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "mike maniatis"
+  title: "American Coding"
 };
 
 export default function RootLayout({

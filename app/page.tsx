@@ -1,37 +1,37 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import PageRow from './ui/PageRow';
+import LandingPageRow from './ui/LandingPageRow';
 
 export default function Home() {
   return (
     <main className="flex flex-col items-stretch font-sans font-black text-blue-900">
       <div className="mt-10">
-        <PageRow
+        <LandingPageRow
           moreInfoText='Contact Us'
           moreInfoLink='/contact'
           paragraphText='You focus on the important and real challenges of running a business.
               We focus on your digital space.'
-          imageSrc='/software-development-1.jpg'
+          imageSrc='/working-at-table.jpg'
           primaryImageLocation={false}
           offColored={true}
           horizontalOrientation={true}
         />
 
-        <PageRow
+        <LandingPageRow
           moreInfoText='Our Commitment'
           moreInfoLink='/promise'
           paragraphText='U.S.A Based, Never Outsourced, and Always Exceptional.'
-          imageSrc='/teamwork.jpg'
+          imageSrc='/teamwork.png'
           primaryImageLocation={true}
           offColored={false}
           horizontalOrientation={true}
         />
 
-        <PageRow
+        <LandingPageRow
           moreInfoText='The Game Plan'
           moreInfoLink='/plan'
           paragraphText='Software Development That Just Makes Sense.'
-          imageSrc='/planning-development.jpg'
+          imageSrc='/whiteboard-roadmap.jpg'
           primaryImageLocation={false}
           offColored={true}
           horizontalOrientation={false}
@@ -39,7 +39,7 @@ export default function Home() {
 
 
         <div className="flex flex-col items-center ">
-          <div><h1 className="text-4xl">Technologies</h1></div>
+          <div><h1 className="text-4xl">Specialties</h1></div>
 
           <div className="flex flex-wrap justify-center items-end">
 

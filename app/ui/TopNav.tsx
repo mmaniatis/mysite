@@ -14,8 +14,8 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between">
             <div>
                 <Link href="/" onClick={() => setIsOpen(false)}>
-                    <div className="flex flex-row block">
-                        <Image className="" alt="" src="/cog.png"  width={52} height={52}/>
+                    <div className="flex flex-row items-center">
+                        <Image className="" alt="" src="/flag.png"  width={72} height={72}/>
                         <span className="hover:text-blue-200 cursor-pointer text-3xl transition-all">americacoding.com</span>
                     </div>
                 </Link>
@@ -26,19 +26,20 @@ const Navbar: React.FC = () => {
               <span className="hover:text-blue-500 cursor-pointer">Home</span>
             </Link>
 
-            <Link href="/aboutme">
-              <span className="hover:text-blue-500 cursor-pointer">About Us</span>
-            </Link>
 
             <Link href="/contact">
               <span className="hover:text-blue-500 cursor-pointer">Consultation</span>
             </Link>
 
-            <Link href="/contact">
+            <Link href="/promise">
               <span className="hover:text-blue-500 cursor-pointer">Our Promise</span>
             </Link>
 
-            <Link href="/contact">
+            <Link href="/plan">
+              <span className="hover:text-blue-500 cursor-pointer">The Strategy</span>
+            </Link>
+
+            <Link href="/support">
               <span className="hover:text-blue-500 cursor-pointer">Support</span>
             </Link>
             
