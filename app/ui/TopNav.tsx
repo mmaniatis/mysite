@@ -59,16 +59,29 @@ const Navbar: React.FC = () => {
     </nav>
     <nav>
         {isOpen && (
-          <div className="md:hidden duration-500 transition-all duration-500 ease-in-out overflow-hidden max-w-lg bg-white rounded-2xl mx-auto flex z-0 items-center flex-col">
-                <Link href="/"  onClick={() => setIsOpen(!isOpen)}>
-                    <span className="hover:text-blue-500 cursor-pointer">Home</span>
-                </Link>
-                <Link href="/aboutme"  onClick={() => setIsOpen(!isOpen)}>
-                <span className="block hover:text-blue-500 cursor-pointer py-2">About Me</span>
-                </Link>
-                <Link href="/contact"  onClick={() => setIsOpen(!isOpen)}>
-                <span className="block hover:text-blue-500 cursor-pointer py-2">Contact</span>
-                </Link>
+          <div className="md:hidden duration-500 transition-all duration-500 ease-in-out overflow-hidden max-w-lg bg-white rounded-2xl mx-auto flex z-0 items-center flex-col gap-5">
+
+
+            <Link href="/" onClick={() => setIsOpen(!isOpen)}>
+              <span className="hover:text-blue-500 cursor-pointer">Home</span>
+            </Link>
+
+
+            <Link href="/contact" onClick={() => setIsOpen(!isOpen)}>
+              <span className="hover:text-blue-500 cursor-pointer">Consultation</span>
+            </Link>
+
+            <Link href="/promise" onClick={() => setIsOpen(!isOpen)}>
+              <span className="hover:text-blue-500 cursor-pointer">Our Promise</span>
+            </Link>
+
+            <Link href="/plan" onClick={() => setIsOpen(!isOpen)}>
+              <span className="hover:text-blue-500 cursor-pointer">The Strategy</span>
+            </Link>
+
+            <Link href="/support" onClick={() => setIsOpen(!isOpen)}>
+              <span className="hover:text-blue-500 cursor-pointer">Support</span>
+            </Link>
           </div>
         )}
     </nav>
