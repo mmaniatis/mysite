@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (<>
-    <nav className="bg-white py-7 rounded-3xl mx-auto mt-4 max-w-6xl z-10 shadow-2xl relative text-blue-900">
+    <nav className="bg-white py-7 rounded-3xl mx-auto mt-4 max-w-6xl z-10 shadow-2xl relative text-blue-900 sticky top-0">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between">
             <div>

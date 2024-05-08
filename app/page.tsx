@@ -4,7 +4,7 @@ import PageRow from './ui/PageRow';
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-screen items-stretch font-sans font-black text-blue-900">
+    <main className="flex flex-col items-stretch font-sans font-black text-blue-900">
       <div className="mt-10">
         <PageRow
           moreInfoText='Contact Us'
@@ -38,7 +38,7 @@ export default function Home() {
         />
 
 
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center ">
           <div><h1 className="text-4xl">Technologies</h1></div>
 
           <div className="flex flex-wrap justify-center items-end">
