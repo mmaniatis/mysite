@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
 
 
             <Link href="/contact">
-              <span className="hover:text-blue-500 cursor-pointer">Consultation</span>
+              <span className="hover:text-blue-500 cursor-pointer">Contact</span>
             </Link>
 
             <Link href="/promise">
@@ -41,6 +41,10 @@ const Navbar: React.FC = () => {
 
             <Link href="/support">
               <span className="hover:text-blue-500 cursor-pointer">Support</span>
+            </Link>
+
+            <Link href="/pricing">
+              <span className="hover:text-blue-500 cursor-pointer">Pricing</span>
             </Link>
             
           </div>
@@ -56,19 +60,18 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </div>
-    </nav>
-    <nav>
+      <nav>
         {isOpen && (
-          <div className="md:hidden duration-500 transition-all duration-500 ease-in-out overflow-hidden max-w-lg bg-white rounded-2xl mx-auto flex z-0 items-center flex-col gap-5">
+          <div className="flex md:hidden max-w-lg bg-white mx-auto z-100 items-center flex-col gap-5">
 
 
             <Link href="/" onClick={() => setIsOpen(!isOpen)}>
-              <span className="hover:text-blue-500 cursor-pointer">Home</span>
+              <span className="hover:text-blue-500 cursor-pointer w-full">Home</span>
             </Link>
 
 
             <Link href="/contact" onClick={() => setIsOpen(!isOpen)}>
-              <span className="hover:text-blue-500 cursor-pointer">Consultation</span>
+              <span className="hover:text-blue-500 cursor-pointer">Contact</span>
             </Link>
 
             <Link href="/promise" onClick={() => setIsOpen(!isOpen)}>
@@ -82,8 +85,13 @@ const Navbar: React.FC = () => {
             <Link href="/support" onClick={() => setIsOpen(!isOpen)}>
               <span className="hover:text-blue-500 cursor-pointer">Support</span>
             </Link>
+
+            <Link href="/pricing" onClick={() => setIsOpen(!isOpen)}>
+              <span className="hover:text-blue-500 cursor-pointer">Pricing</span>
+            </Link>
           </div>
         )}
+    </nav>
     </nav>
     </>
   );

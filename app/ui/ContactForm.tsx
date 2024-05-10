@@ -31,22 +31,21 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6">
-      <h2 className="text-2xl font-semibold mb-4">Contact Me</h2>
+    <div className="w-full mx-auto p-6 w-full items-center justify-center">
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label htmlFor="name" className="block font-medium mb-1">Name</label>
-          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500" required />
+          <label htmlFor="name" className="block text-red-400 font-black text-2xl mb-1">Name</label>
+          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 min-h-12" required />
         </div>
-        <div className="mb-4">
-          <label htmlFor="email" className="block font-medium mb-1">Email</label>
-          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500" required />
+        <div className="mb-4 ">
+          <label htmlFor="email" className="block text-red-400 font-black text-2xl mb-1">Email</label>
+          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 min-h-12" required />
         </div>
-        <div className="mb-6">
-          <label htmlFor="message" className="block font-medium mb-1">Message</label>
-          <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={4} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500" required />
+        <div className="mb-6 mx-auto">
+          <label htmlFor="message" className="text-red-400 block font-black text-2xl mb-1">Message</label>
+          <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={4} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 min-h-36" required />
         </div>
-        <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-md transition-colors duration-300">Send</button>
+        <button type="submit" className="flex mx-auto items-center justify-center bg-blue-400 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-md transition-colors duration-300 w-1/2 min-h-12 ">Send</button>
       </form>
     </div>
   );
