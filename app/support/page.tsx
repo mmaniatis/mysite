@@ -21,7 +21,7 @@ const SupportPage = () => {
                     <TextBox text="Receive an engineers support for new features within 3 business day" header="Tier 1 [150$/m]" />
                     <TextBox text="Receive an engineers support for new features within 7 business days" header="Tier 2 [100$/m]" />
                     <TextBox text="Receive an engineers support for new features within 10 business days" header="Tier 3 [50$/m]" />
-                    <TextBox text="Receive an engineers support for new features within 20 business days" header="Tier 4 [Base]" />
+                    <TextBox text="Receive an engineers support for new features within 20 business days" header="Tier 4 [0$/m]" />
                 </div>
             </div>            
         </main>
