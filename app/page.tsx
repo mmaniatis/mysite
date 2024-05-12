@@ -30,7 +30,7 @@ export default function Home() {
         <LandingPageRow
           moreInfoText='The Game Plan'
           moreInfoLink='/plan'
-          paragraphText='Software Development That Just Makes Sense.'
+          paragraphText='Focus on your business while we execute a plan tailored for your success'
           imageSrc='/whiteboard-roadmap.jpg'
           primaryImageLocation={false}
           offColored={true}
