@@ -4,7 +4,7 @@ const PricingPage = () => {
     return (
         <main className="flex flex-col font-sans  mt-1 font-black text-blue-900 text-sm md:text-xl">
             <div className={`flex justify-center items-center flex-col mt-1 gap-2 bg-[white] min-h-96 w-full`}>
-                <p className='text-4xl text-red-400 mt-3'>Pricing</p>
+                <p className='text-4xl text-blue-900 mt-3'>Pricing</p>
                 <div className="flex flex-row items-center justify-center gap-3 mt-5">
                     <p className="w-11/12"><span className="font-black text-green-600 text-4xl">0$</span> upfront costs. Pay as you need per month.
                     </p>

@@ -17,7 +17,7 @@ const PlanPage: React.FC = () => {
             <div className={`flex justify-center items-center flex-col gap-2 min-h-96 w-full`}>
                 <p className='text-4xl text-blue-900'>Plan</p>
                 <div className="flex flex-row items-center justify-center gap-5">
-                    <Image src="/planning-development.jpg" alt="" width={400} height={400} />
+                    <Image src="/planning-development.jpg" alt="" width={400} height={400} className="rounded-lg"/>
 
                     <p className="w-1/2 text-lg">
                         Sit back and relax while we engineer a customized development and support plan
@@ -33,7 +33,7 @@ const PlanPage: React.FC = () => {
                         We would never start building anything without laying out the exact plan and getting
                         your approval!
                     </p>
-                    <Image src="/communicate-group.jpg" alt="" width={400} height={400} />
+                    <Image src="/communicate-group.jpg" alt="" width={400} height={400} className="rounded-lg"/>
 
                 </div>
             </div>
@@ -41,7 +41,7 @@ const PlanPage: React.FC = () => {
                 <p className='text-4xl text-blue-900'>Execute</p>
 
                 <div className="flex flex-row items-center justify-center gap-5">
-                    <Image src="/chalkboard-plan-horizontal.jpg" alt="" width={400} height={400} />
+                    <Image src="/chalkboard-plan-horizontal.jpg" alt="" width={400} height={400} className="rounded-lg" />
 
                     <p className="w-1/2 text-lg">
                         We promise the quickest go-to-market time while not sacrificng any quality.
@@ -59,7 +59,7 @@ const PlanPage: React.FC = () => {
                         You choose a support tier that you want. No AI, chat bots, or long wait times. Dial your engineer
                         directly.
                     </p>
-                    <Image src="/support-team.jpg" alt="" width={400} height={400} />
+                    <Image src="/support-team.jpg" alt="" width={400} height={400} className="rounded-lg"/>
 
                 </div>
             </div>
