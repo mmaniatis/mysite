@@ -33,7 +33,7 @@ const PlanPage: React.FC = () => {
                         We would never start building anything without laying out the exact plan and getting
                         your approval!
                     </p>
-                    <Image src="/planning-development.jpg" alt="" width={400} height={400} />
+                    <Image src="/communicate-group.jpg" alt="" width={400} height={400} />
 
                 </div>
             </div>
@@ -41,7 +41,7 @@ const PlanPage: React.FC = () => {
                 <p className='text-4xl text-blue-900'>Execute</p>
 
                 <div className="flex flex-row items-center justify-center gap-5">
-                    <Image src="/planning-development.jpg" alt="" width={400} height={400} />
+                    <Image src="/chalkboard-plan-horizontal.jpg" alt="" width={400} height={400} />
 
                     <p className="w-1/2 text-lg">
                         We promise the quickest go-to-market time while not sacrificng any quality.
@@ -59,7 +59,7 @@ const PlanPage: React.FC = () => {
                         You choose a support tier that you want. No AI, chat bots, or long wait times. Dial your engineer
                         directly.
                     </p>
-                    <Image src="/planning-development.jpg" alt="" width={400} height={400} />
+                    <Image src="/support-team.jpg" alt="" width={400} height={400} />
 
                 </div>
             </div>
