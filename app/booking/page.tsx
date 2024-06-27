@@ -1,9 +1,9 @@
-"use client"
+// "use client"
 
-import BookingForm from "../ui/BookingForm";
+// import BookingForm from "../ui/BookingForm";
 
-export default function Booking() {
-    return <div>
-        <BookingForm/>
-    </div>
-}
+// export default function Booking() {
+//     return <div>
+//         <BookingForm/>
+//     </div>
+// }
