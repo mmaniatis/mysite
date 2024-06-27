@@ -1,54 +1,51 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+// pages/contact.tsx
 
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
+import React from 'react';
+import { NextPage } from 'next';
+import { NextSeo } from 'next-seo';
+import { FiMail, FiTwitter, FiLinkedin } from 'react-icons/fi';
 
-const ContactForm: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // You can handle form submission logic here
-    console.log(formData);
-
-    // Reset form fields after successful submission
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
-  };
-
+const ContactPage: NextPage = () => {
   return (
-    <div className="w-full mx-auto p-6 w-full items-center justify-center">
-      <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label htmlFor="name" className="block text-blue-900 font-black text-2xl mb-1">Name</label>
-          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 min-h-12" required />
+    <>
+      <NextSeo
+        title="Contact Me"
+        description="Get in touch with me via email, Twitter, or LinkedIn."
+      />
+      <div className="mt-10 flex flex-col items-center justify-center">
+        <h1 className="text-3xl font-semibold text-blue-800 mb-6 text-center">Contact Me</h1>
+        <div className="flex justify-between items-center w-1/2 px-20">
+          {/* Email Icon */}
+          <a
+            href="mailto:mikejohnmaniatis@gmail.com"
+            className="text-blue-900 hover:text-blue-500 transition duration-300"
+          >
+            <FiMail className="text-8xl" />
+          </a>
+
+          {/* Twitter Icon */}
+          <a
+            href="https://twitter.com/michaelmaniatis"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-900 hover:text-blue-500 transition duration-300"
+          >
+            <FiTwitter className="text-8xl" />
+          </a>
+
+          {/* LinkedIn Icon */}
+          <a
+            href="https://www.linkedin.com/in/mike-maniatis-2b178bb7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-900 hover:text-blue-500 transition duration-300"
+          >
+            <FiLinkedin className="text-8xl" />
+          </a>
         </div>
-        <div className="mb-4 ">
-          <label htmlFor="email" className="block text-blue-900 font-black text-2xl mb-1">Email</label>
-          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 min-h-12" required />
-        </div>
-        <div className="mb-6 mx-auto">
-          <label htmlFor="message" className="text-blue-900 block font-black text-2xl mb-1">Message</label>
-          <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={4} className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 min-h-36" required />
-        </div>
-        <button type="submit" className="flex mx-auto items-center justify-center bg-blue-400 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-md transition-colors duration-300 w-1/2 min-h-12 ">Send</button>
-      </form>
-    </div>
+      </div>
+    </>
   );
 };
 
-export default ContactForm;
+export default ContactPage;
